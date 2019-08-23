@@ -1,0 +1,281 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* Universal */
+html, body {
+    color: #FFF;
+    font-size: 1rem;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+section {
+    margin: 54px 0;
+}
+h3 {
+    margin-bottom: 1rem;
+
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+.navbar-light {
+    background-color: #FFF !important;
+}
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/* Page Content */
+#page-content {
+    margin-bottom: 76px;
+}
+
+/* Underlay */
+#underlay {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    background: linear-gradient(103deg, rgba(152, 152, 152, 0.03) 0%, rgba(152, 152, 152, 0.03) 20%,rgba(44, 44, 44, 0.03) 20%, rgba(44, 44, 44, 0.03) 40%,rgba(175, 175, 175, 0.03) 40%, rgba(175, 175, 175, 0.03) 60%,rgba(127, 127, 127, 0.03) 60%, rgba(127, 127, 127, 0.03) 80%,rgba(185, 185, 185, 0.03) 80%, rgba(185, 185, 185, 0.03) 100%),linear-gradient(127deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 16.667%,rgba(68, 68, 68, 0.03) 16.667%, rgba(68, 68, 68, 0.03) 33.334%,rgba(147, 147, 147, 0.03) 33.334%, rgba(147, 147, 147, 0.03) 50.001000000000005%,rgba(213, 213, 213, 0.03) 50.001%, rgba(213, 213, 213, 0.03) 66.668%,rgba(235, 235, 235, 0.03) 66.668%, rgba(235, 235, 235, 0.03) 83.33500000000001%,rgba(190, 190, 190, 0.03) 83.335%, rgba(190, 190, 190, 0.03) 100.002%),linear-gradient(91deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 20%,rgba(178, 178, 178, 0.01) 20%, rgba(178, 178, 178, 0.01) 40%,rgba(155, 155, 155, 0.01) 40%, rgba(155, 155, 155, 0.01) 60%,rgba(24, 24, 24, 0.01) 60%, rgba(24, 24, 24, 0.01) 80%,rgba(76, 76, 76, 0.01) 80%, rgba(76, 76, 76, 0.01) 100%),linear-gradient(126deg, rgba(190, 190, 190, 0.02) 0%, rgba(190, 190, 190, 0.02) 20%,rgba(191, 191, 191, 0.02) 20%, rgba(191, 191, 191, 0.02) 40%,rgba(230, 230, 230, 0.02) 40%, rgba(230, 230, 230, 0.02) 60%,rgba(216, 216, 216, 0.02) 60%, rgba(216, 216, 216, 0.02) 80%,rgba(56, 56, 56, 0.02) 80%, rgba(56, 56, 56, 0.02) 100%),linear-gradient(189deg, rgba(216, 216, 216, 0.03) 0%, rgba(216, 216, 216, 0.03) 14.286%,rgba(44, 44, 44, 0.03) 14.286%, rgba(44, 44, 44, 0.03) 28.572%,rgba(114, 114, 114, 0.03) 28.572%, rgba(114, 114, 114, 0.03) 42.858%,rgba(7, 7, 7, 0.03) 42.858%, rgba(7, 7, 7, 0.03) 57.144%,rgba(55, 55, 55, 0.03) 57.144%, rgba(55, 55, 55, 0.03) 71.42999999999999%,rgba(121, 121, 121, 0.03) 71.43%, rgba(121, 121, 121, 0.03) 85.71600000000001%,rgba(79, 79, 79, 0.03) 85.716%, rgba(79, 79, 79, 0.03) 100.002%),linear-gradient(103deg, rgba(244, 244, 244, 0.01) 0%, rgba(244, 244, 244, 0.01) 14.286%,rgba(211, 211, 211, 0.01) 14.286%, rgba(211, 211, 211, 0.01) 28.572%,rgba(76, 76, 76, 0.01) 28.572%, rgba(76, 76, 76, 0.01) 42.858%,rgba(185, 185, 185, 0.01) 42.858%, rgba(185, 185, 185, 0.01) 57.144%,rgba(246, 246, 246, 0.01) 57.144%, rgba(246, 246, 246, 0.01) 71.42999999999999%,rgba(35, 35, 35, 0.01) 71.43%, rgba(35, 35, 35, 0.01) 85%,rgba(244, 244, 244, 0.01) 85.716%, rgba(244, 244, 244, 0.01) 100.002%),linear-gradient(90deg, hsl(357,0%,14%),hsl(357,0%,14%));
+}
+
+/* Landing Page */
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+}
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+.home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+.landing-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6); 
+}
+.caption {
+    width: 95%;
+    color: #fff;
+    text-align: center;
+    /* text-transform: uppercase; */
+
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.caption-img {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-left: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.caption-img img {
+    max-width: 100%;
+}
+.caption hr {
+    border-bottom: 3px solid #fff;
+    width: 80%;
+}
+.caption a {
+    margin-top: 10px;
+}
+.caption h4 {
+    font-size: 1.75rem;
+}
+.caption h3 {
+    font-size: -webkit-xxx-large;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem #000;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+
+/* About */
+.social-icons a[title="Facebook"], .btn-facebook {
+    background-color: #3B5998;
+}
+.social-icons a[title="Instagram"], .btn-instagram {
+    background-color: #BC2A8D;
+}
+.social-icons a[title="LinkedIn"], .btn-linkedin {
+    background-color: #0077B5;
+}
+
+/* Portfolio */
+#filter {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+#filter a {
+    font-size: 1.1rem;
+    padding: 0.25rem 0.75rem;
+    margin: 0.25rem 0.1rem;
+}
+.gallery {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+    -webkit-column-width: 25%; /* Chrome, Safari, Opera */
+    -moz-column-width: 25%; /* Firefox */
+    column-width: 25%;
+}
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+
+    max-width: 100%;
+    min-height: 150px;
+    background-color: #000;
+
+    border-radius: 10px;
+
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;    
+}
+.gallery .pics img {
+    max-width: 100%;
+}
+
+/* Contact */
+#mail-address a {
+    color: #FFF;
+}
+#contact .btn-submit {
+    background-color: #263238;
+}
+.btn-floating {
+    -webkit-box-shadow:
+        0 5px 11px 0 rgba(0,0,0,.18),
+        0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow:
+        0 5px 11px 0 rgba(0,0,0,.18),
+        0 4px 15px 0 rgba(0,0,0,.15);
+    width: 47px;
+    height: 47px;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+.btn-floating svg {
+    display: inline-block;
+    width: inherit;
+    text-align: center;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 47px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Footer */
+footer {
+    background-color: #263238;
+    color: #fff;
+    font-size: 0.9rem;
+}
+#copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.6);
+
+    padding: 0.5rem 0;
+
+    text-align: center;
+    overflow: hidden;
+}
+#copyright a {
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .gallery {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+        -webkit-column-width: 100%; /* Chrome, Safari, Opera */
+        -moz-column-width: 100%; /* Firefox */
+        column-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .gallery {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+        -webkit-column-width: 50%; /* Chrome, Safari, Opera */
+        -moz-column-width: 50%; /* Firefox */
+        column-width: 50%;
+    }
+}
+
+/*============= BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width:  992px { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px { ... }
+
+==============*/
